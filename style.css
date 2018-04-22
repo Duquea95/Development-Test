@@ -1,0 +1,95 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@media(max-width:991px){
+    body{
+        padding-top: 55px;
+    }
+}
+.mobile-navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar-header{
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+.mobile-menu{
+    float: left;
+}
+.hamburger-menu{
+    width: 40px;
+    height: 55px;
+    line-height: 55px;
+}
+
+.nav-search{
+    width: 20px;
+    float: right;
+}
+.display-block{
+    display: block;
+}
+.account-icon{
+    width: 16px;
+    float: right;
+    height: 55px;
+}
+.icon{
+    vertical-align: middle;
+}
+.nav-logo{
+    display: block;
+    width: 120px;
+    height: 55px;
+    line-height: 55px;
+    margin: 0 auto;
+}
+.search-bar{
+    width: 100%;
+    visibility: hidden;
+}
+main{
+}
+.refinement{
+    /* margin-top: 155px; */
+}
+.refinement-height{
+    height: 27px;
+    line-height: 29px;
+}
+.refinement-wrapper{
+    position: relative;
+    margin: 0 15px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+}
+.refinement-wrapper:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.breadcrumb{
+    float: left;
+}
+.filter{
+    float: right;
+}
+.filter-drop:after{
+    content: '\002B';
+    display: inline-block;
+    background: none;
+    text-align: right;
+    width: 15px;
+    height: 27px;
+    line-height: 24px;
+}
