@@ -13,6 +13,7 @@
 .mobile-navbar{
     width: 100%;
     position: fixed;
+    padding: 0 10px;
     top: 0;
     left: 0;
     right: 0;
@@ -20,28 +21,31 @@
 .navbar-header{
     text-align: center;
     position: relative;
-    padding-top: 30px;
 }
 .mobile-menu{
     float: left;
 }
 .hamburger-menu{
     width: 40px;
-    height: 55px;
-    line-height: 55px;
 }
 
 .nav-search{
     width: 20px;
     float: right;
+    margin: 0 5px;
+    padding: 0 3px;
 }
 .display-block{
     display: block;
 }
 .account-icon{
-    width: 16px;
+    width: 14px;
     float: right;
+    margin: 0 5px;
+}
+.nav-height{
     height: 55px;
+    line-height: 55px;
 }
 .icon{
     vertical-align: middle;
@@ -49,8 +53,6 @@
 .nav-logo{
     display: block;
     width: 120px;
-    height: 55px;
-    line-height: 55px;
     margin: 0 auto;
 }
 .search-bar{
