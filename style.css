@@ -1,3 +1,4 @@
+/* presets */
 *, *:after, *:before {
     margin: 0;
     padding: 0;
@@ -5,15 +6,43 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-@media(max-width:991px){
-    body{
-        padding-top: 55px;
-    }
+ul,ol{
+    margin: 0;
+    padding: 0;
 }
-.mobile-navbar{
+body{
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 300;
+    letter-spacing: 0.16rem;
+    line-height: 1.42857143;
+    word-wrap: break-word;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+
+}
+.clearboth{
+    clear: both;
+}
+.float, .grid-item{
+    float: left;
+}
+.half{
+    width: 50%;
+}
+.full-width{
     width: 100%;
+}
+.display-block{
+    display: block;
+}
+.display-none{
+    display: none;
+}
+/* Header */
+.mobile-navbar{
     position: fixed;
     padding: 0 10px;
+    z-index: 200;
     top: 0;
     left: 0;
     right: 0;
@@ -26,17 +55,14 @@
     float: left;
 }
 .hamburger-menu{
-    width: 40px;
+    padding-right: 22px;
+    width: 50px;
 }
-
 .nav-search{
     width: 20px;
     float: right;
     margin: 0 5px;
     padding: 0 3px;
-}
-.display-block{
-    display: block;
 }
 .account-icon{
     width: 14px;
@@ -57,12 +83,6 @@
 }
 .search-bar{
     width: 100%;
-    visibility: hidden;
-}
-main{
-}
-.refinement{
-    /* margin-top: 155px; */
 }
 .refinement-height{
     height: 27px;
@@ -75,7 +95,7 @@ main{
     border-bottom: 1px solid #000000;
     margin-bottom: 20px;
 }
-.refinement-wrapper:after{
+.refinement-wrapper:after, .footer-top:after, .row:after{
     content: " ";
     display: block;
     clear: both;
@@ -94,4 +114,185 @@ main{
     width: 15px;
     height: 27px;
     line-height: 24px;
+}
+
+/* Main Body */
+main{
+    display: block;
+    min-height: 100vh;
+}
+main, footer{
+    text-transform: uppercase;
+}
+.container{
+    padding: 0 15px;
+    max-width: 1400px;
+}
+.collection-grid::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.collection-product-grid{
+    padding: 0 10px;
+    float: left;
+}
+.black-link{
+    color: black;
+    text-decoration: none;
+}
+.set-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: scroll;
+}
+.set-name{
+    position: relative;
+    display: inline-block;
+    padding-top: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.set-name::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 1px;
+    background-color: #808285;
+}
+
+.set-item{
+    width: 160px;
+    flex: none;
+}
+
+.img-container{
+    position: relative;
+    padding-top: 142.85714%;
+    height: auto !important;
+}
+.item-image{
+    background-image: url("https://cdn.shopify.com/s/files/1/2422/6603/products/STLOUIS-BENGALPOLARIZED-WEBSITE-FRONT_250x.progressive.PNG.jpg?v=1512497656");
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.item-detail{
+    height: 60px;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+.set-container::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Footer */
+footer{
+    display: block;
+    position: relative;
+    font-size: 1.2rem;
+    padding: 0 30px;
+}
+li{
+    list-style: none;
+}
+.footer-title{
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.footer-top{
+    margin-bottom: 15px;
+}
+.footer-list-container{
+    margin-top: 25px;
+}
+.footer-list{
+    margin-bottom: 40px;
+}
+.footer-list-item:first-child{
+    padding-top: 0;
+}
+.footer-list-item{
+    padding-top: 14px;
+}
+.footer-button{
+    display: block;
+    border: 1px solid #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer-hours{
+    line-height: 1.8;
+}
+
+.fb-icon::before{
+    content: "\e028"
+}
+.top{
+    z-index: 3147483639;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 75px;
+    text-indent: 4px;
+    background-image: url("https://cdn.shopify.com/s/files/1/2422/6603/t/49/assets/icon_arrow_top_grey.svg?15186197157817367994");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 30px;
+}
+.copyright{
+    font-size: 1.2rem;
+    letter-spacing: 0.16rem;
+    color: #808285;
+}
+.footer-button{
+    display: block;
+    padding: 7px 0;
+    margin-top: 10px;
+}
+.footer-help{
+    padding-left: 15px;
+}
+@media (max-width: 767px){
+    footer{
+        padding: 0 15px;
+        font-size: 10px;
+    }
+    .footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer-container{
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    .copyright{
+        padding-top: 30px;
+        font-size: 9px;
+    }
+}
+@media (max-width:991px){
+    body{
+        padding-top: 55px;
+    }
+    footer{
+        margin-top: 30px;
+    }
+    .footer-button{
+        padding: 7px 0;
+    }
+    .copyright{
+        text-align: center;
+    }
 }
