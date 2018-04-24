@@ -1,5 +1,6 @@
 $(function(){
     var i = 0;
+    var subMenu = $(".dropdown-toggle");
     var obj = {
         collection: {
             "title1": "St. Louis Classics",
@@ -27,19 +28,32 @@ $(function(){
             "title23": "Jackson",
             "title24": "Orleans Blinker",
             "title25": "Olivier",
-            "title26": "Valence",
-            "title27": "L.G.D",
-            "title28": "Laveau",
-            "title29": "Lafitte",
-            "title30": "Huey",
-            "title31": "Julia",
-            "title32": "Iris",
-            "title33": "Lyons",
-            "title34": "Toulouse",
-            "title35": "Louisa",
-            "title36": "Gift Card"
+            "title26": "Octavia",
+            "title27": "Valence",
+            "title28": "L.G.D",
+            "title29": "Laveau",
+            "title30": "Lafitte",
+            "title31": "Huey",
+            "title32": "Julia",
+            "title33": "Iris",
+            "title34": "Lyons",
+            "title35": "Toulouse",
+            "title36": "Louisa",
+            "title37": "Gift Card"
         }
+
     }
+
+    subMenu.on("click", function(){
+            var sub = $(this).text();
+            if($(this).next().hasClass('open-sub')){
+                $(".open-sub").removeClass("open-sub");
+                return false;
+            }
+            $(".open-sub").removeClass("open-sub");
+            $(this).next().addClass('open-sub');
+            $(this).next().children().css('opacity', '1');
+    })
 
     for (var set in obj) {
         // console.log(set);
@@ -49,23 +63,33 @@ $(function(){
         }
     }
 
+    $(".open-js").on("click",function(){
+        $(".navbar-nav").addClass("navbar-nav-open");
+        $(".hamburger-menu").css("display", "none");
+        $(".close-js").removeClass("display-none");
+        $("main").css({"opacty": "1", "display": "none"});
+
+    });
+
+    $(".close-js").on("click",function(){
+        $(".navbar-nav").removeClass("navbar-nav-open");
+        $(".hamburger-menu").css("display", "block");
+        $(".close-js").addClass("display-none");
+        $("main").css({"opacty": "0", "display": "block"});
+    });
+
+
     function createCollection(title){
         if(i == 0){
-            var productSet = $('.product-set').clone();
+            var productSet = $(".product-set").clone();
             $(".product-set").addClass("set"+i);
             $(".title").text(title);
-            console.log(productSet);
         }
         else{
             var productSet = $(".product-set").clone();
             productSet.removeClass().addClass(".product-set .set"+i);
-            // console.log(productSet.children(".title"));
             productSet.children(".title").text(title);
-            // $(".title"+i).text(title);
-            console.log(title);
-            // console.log(aTitle);
-            // aTitle.text(title);
-            // console.log(productSet);
+            // console.log(title);
             productSet.appendTo('div.mobile-display');
         }
         i++;
