@@ -18,9 +18,11 @@
                         <div class="close-js display-none">
                             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon_cross" viewBox="0 0 100 100"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M21.19 21.19l57.62 57.62M78.81 21.19L21.19 78.81"></path></svg>
                         </div>
+                        <!-- Eof mobile-menu -->
                     </div>
+
                     <div class="nav-search nav-height">
-                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-magnify" viewBox="0 0 100 100"><path class="fill-current-color" d="M65.2 61.8c4.8-6.1 7.6-13.8 7.6-22.1 0-19.8-16.1-36.2-36.2-36.2S.4 19.9.4 39.7c0 19.8 16.3 36.2 36.2 36.2 9.7 0 18.5-3.8 25-10.1l34.4 31 3.6-4-34.4-31zm-28.6 8.7c-17.2 0-30.8-13.9-30.8-30.8S19.7 8.9 36.6 8.9c17.2 0 30.8 13.9 30.8 30.8S53.5 70.5 36.6 70.5z"></path></svg>
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon search-open" viewBox="0 0 100 100"><path class="fill-current-color" d="M65.2 61.8c4.8-6.1 7.6-13.8 7.6-22.1 0-19.8-16.1-36.2-36.2-36.2S.4 19.9.4 39.7c0 19.8 16.3 36.2 36.2 36.2 9.7 0 18.5-3.8 25-10.1l34.4 31 3.6-4-34.4-31zm-28.6 8.7c-17.2 0-30.8-13.9-30.8-30.8S19.7 8.9 36.6 8.9c17.2 0 30.8 13.9 30.8 30.8S53.5 70.5 36.6 70.5z"></path></svg>
                     </div>
                     <a class="account-icon nav-height display-block" href="#">
                         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-account" viewBox="0 0 100 100"><path class="fill-current-color" d="M50 50.9c-14 0-25.4-11.4-25.4-25.4S36 0 50 0c14 0 25.4 11.4 25.4 25.4S64 50.9 50 50.9zm0-46.5c-11.6 0-21 9.4-21 21s9.4 21 21 21 21-9.4 21-21-9.4-21-21-21zM97.6 100H2.4c-1.2 0-2.2-1-2.2-2.2 0-24 20-40 49.8-40s49.8 16.1 49.8 40c0 1.2-1 2.2-2.2 2.2zM4.7 95.6h90.6C94.1 75.2 76.6 62.2 50 62.2c-26.6 0-44.1 13-45.3 33.4z"></path></svg>
@@ -209,7 +211,7 @@
                                             <div class="overlay-layer"></div>
                                         </div>
                                         <div class="product-detail">
-                                            <div class="product-type">
+                                            <div class="product-type text-center">
                                                 SHOP WOMEN'S
                                             </div>
                                         </div>
@@ -222,7 +224,7 @@
                                             <div class="overlay-layer"></div>
                                         </div>
                                         <div class="product-detail">
-                                            <div class="product-type">
+                                            <div class="product-type text-center">
                                                 SHOP MEN'S
                                             </div>
                                         </div>
@@ -246,10 +248,31 @@
                     </div>
                 </div>
             </div>
-            <div class="search-bar display-none">
-                <form>
-                    <input class="search-input" type="text" value="" placeholder="Search">
-                </form>
+
+            <div class="search-bar-container">
+                <div class="search-bar-overlay display-none">
+
+                </div>
+                <div class="search-bar">
+                    <div class="sb-inner">
+                        <div class="sb-close">
+
+                        </div>
+                    </div>
+                    <form>
+                        <input class="sb-input" type="text" value="" placeholder="SEARCH">
+                        <div class="sb-suggestions"></div>
+                        <span>Suggestions</span>
+                        <span>New Arrivals</span>
+                        <span>Best Sellers</span>
+                        <span>Celeb Faves</span>
+                        <span>Polarized</span>
+                        <span>Mirrored</span>
+                        <div class="position-relative">
+
+                        </div>
+                    </form>
+                </div>
             </div>
         </header>
 
@@ -285,6 +308,7 @@
                                                     <div class="img-container">
                                                         <div class="item-image">
                                                         </div>
+                                                        <div class="item-image-overlay"></div>
                                                     </div>
                                                     <div class="item-detail">
                                                         <div class="item-name">
@@ -303,6 +327,7 @@
                                                     <div class="img-container">
                                                         <div class="item-image">
                                                         </div>
+                                                        <div class="item-image-overlay"></div>
                                                     </div>
                                                     <div class="item-detail">
                                                         <div class="item-name">
@@ -321,6 +346,7 @@
                                                     <div class="img-container">
                                                         <div class="item-image">
                                                         </div>
+                                                        <div class="item-image-overlay"></div>
                                                     </div>
                                                     <div class="item-detail">
                                                         <div class="item-name">

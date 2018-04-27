@@ -36,6 +36,12 @@ body{
 .full-width{
     width: 100%;
 }
+.text-center{
+    text-align: center;
+}
+.position-relative{
+    position: relative;
+}
 .display-block{
     display: block;
 }
@@ -182,7 +188,6 @@ ul{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.03);
 }
 .nav-search{
     width: 20px;
@@ -208,7 +213,7 @@ ul{
     margin: 0 auto;
 }
 .search-bar{
-    width: 100%;
+    /* width: 100%; */
 }
 .refinement-height{
     height: 27px;
@@ -274,7 +279,7 @@ main, footer{
     text-decoration: none;
 }
 .set-container{
-    overflow: scroll;
+    overflow-x: scroll;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -322,6 +327,14 @@ main, footer{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+.item-image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.03);
 }
 .item-detail{
     height: 60px;
