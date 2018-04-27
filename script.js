@@ -44,6 +44,7 @@ $(function(){
 
     }
 
+
     subMenu.on("click", function(){
             var sub = $(this).text();
             if($(this).next().hasClass('open-sub')){
@@ -64,13 +65,12 @@ $(function(){
         }
     }
 
-    function openNav(){
+    $(".open-js").on("click",function(){
         $(".navbar-nav").addClass("navbar-nav-open");
         $(".hamburger-menu").css("display", "none");
         $(".close-js").removeClass("display-none");
         $("main").css({"opacty": "1", "display": "none"});
-    }
-    function closeNav(){}
+    });
 
     $(".close-js").on("click",function(){
         $(".navbar-nav").removeClass("navbar-nav-open");
