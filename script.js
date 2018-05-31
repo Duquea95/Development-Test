@@ -44,10 +44,10 @@ $(function(){
 
     }
     // desktop menu
-    subMenu.on("mouseenter", function(){
-        console.log($(this).children(".dropdown-menu"));
-        $(this).children(".dropdown-menu").css("visibility", 'visible');
-    })
+    // subMenu.on("mouseenter", function(){
+    //     console.log($(this).children(".dropdown-menu"));
+    //     $(this).children(".dropdown-menu").css("visibility", 'visible');
+    // })
     // mouseleave: function() {
     //     $(".dropdown-menu").css("visibility", 'none');
     // }
@@ -55,7 +55,7 @@ $(function(){
 
 
     // Mobile menu
-    subMenu.on("click", function(){
+    subMenu.on("click mouseenter", function(){
             var sub = $(this).text();
             if($(this).next().hasClass('open-sub')){
                 $(".open-sub").removeClass("open-sub");
