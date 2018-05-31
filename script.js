@@ -44,12 +44,15 @@ $(function(){
 
     }
     // desktop menu
-
-    var lv1 = $(".nav-list-level-1-item.dropdown");
-    console.log(lv1);
-    lv1.on("click", function(){
-        console.log($(this+" .dropdown-menu"));
+    subMenu.on("mouseenter", function(){
+        console.log($(this).children(".dropdown-menu"));
+        $(this).children(".dropdown-menu").css("visibility", 'visible');
     })
+    // mouseleave: function() {
+    //     $(".dropdown-menu").css("visibility", 'none');
+    // }
+
+
 
     // Mobile menu
     subMenu.on("click", function(){
