@@ -43,8 +43,15 @@ $(function(){
         }
 
     }
+    // desktop menu
 
+    var lv1 = $(".nav-list-level-1-item.dropdown");
+    console.log(lv1);
+    lv1.on("click", function(){
+        console.log($(this+" .dropdown-menu"));
+    })
 
+    // Mobile menu
     subMenu.on("click", function(){
             var sub = $(this).text();
             if($(this).next().hasClass('open-sub')){
