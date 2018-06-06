@@ -583,7 +583,7 @@ li{
     content: "\e028"
 }
 .top{
-    z-index: 3147483639;
+    /* z-index: 3147483639; */
     position: absolute;
     width: 50px;
     height: 50px;
