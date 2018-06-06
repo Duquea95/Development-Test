@@ -301,7 +301,7 @@ li.desktop-navbar-nav-dropdown .desktop-navbar-nav-dropdown-menu
 }
 .mobile-dropdown-menu{
     max-height: 0;
-    overflow: hidden;
+    overflow: scroll;
     transition: max-height 500ms ease-in-out 0s;
 }
 .open-sub{
@@ -607,6 +607,14 @@ li{
 .footer-help{
     padding-left: 15px;
 }
+@media(min-width: 1024){
+    .container {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 30px;
+    }
+}
 @media only screen and (max-width:991px){
     .desktop-navbar{
         display: none;
@@ -643,6 +651,7 @@ li{
     .navbar-nav{
         visibility: hidden;
         opacity: 0;
+        width: 100%;
         position: fixed;
         top: 55px;
         padding: 0 30px;
@@ -654,6 +663,7 @@ li{
         opacity: 1;
         visibility: visible;
         overflow-x: hidden;
+        overflow-y: scroll;
     }
     .refinement{
         padding-top: 5%;
